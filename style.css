@@ -1,0 +1,992 @@
+/* variables CSS */
+:root {
+    --bleuclair: #3cd2ff;
+    --darkblue: #3c70ff;
+    --vertpastel: #3cffcb;
+}
+
+/* mini reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+/* ------------- HEADER ------------------- */
+
+.fond {
+    width: 100%;
+    background-color: var(--darkblue);
+    height: 100px;
+    display: flex;
+}
+
+.fond #top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    color: white;
+}
+
+
+.fond #top-bar i {
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+}
+
+#top-page {
+    margin: 0 auto;
+}
+
+#top-page #bandeau {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#top-page #bandeau .logo img {
+    max-width: 200px;
+}
+
+#top-page #bandeau .logo a {
+    width: 15%;
+}
+
+#top-page #bandeau .icones-bandeau {
+    font-size: 2rem;
+    color: var(--darkblue);
+    width: 30%;
+}
+
+/* ------menu burger animée ---------*/
+
+#menu-burger {
+    margin: 0;
+    width: 30%;
+    height: 100px;
+    background: #48435C;
+    z-index: 1000;
+}
+
+#menu-burger .main_pages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#menu-burger .main_pages a {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-decoration: none;
+    color: white;
+}
+
+#menu-burger .main_pages a:hover {
+    background: var(--vertpastel);
+}
+
+label {
+    display: none;
+}
+
+label,
+#toggle {
+    display: none;
+}
+
+
+/* ----------------- MAIN PAGE ------------------ */
+#main-page .presentation {
+    width: 95%;
+    color: var(--darkblue);
+    margin-bottom: 15px;
+}
+
+#main-page .presentation h1 {
+    text-align: center;
+    margin-top: 15px;
+    border-top: 3px solid var(--bleuclair);
+    padding: 20px 0;
+}
+
+#main-page .presentation p {
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+#main-page .presentation a {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+/*------- Image -------*/
+#main-page #faro {
+    display: flex;
+    justify-content: center;
+}
+
+#main-page #faro img {
+    width: 95%;
+}
+
+/* ------Actualités---------- */
+
+#main-page .actus {
+    width: 95%;
+}
+
+#main-page .actus .titre-actus {
+    width: 95%;
+    color: var(--darkblue);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+#main-page .actus .bloc-actus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#main-page .actus .bloc-actus .une-actu {
+    width: 100%;
+    border: 2px solid var(--darkblue);
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-page .actus .bloc-actus .une-actu img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+#main-page .actus .bloc-actus .une-actu h3 {
+    background-color: var(--darkblue);
+    text-transform: uppercase;
+    color: white;
+    padding: 4px 0;
+    font-size: 1.2rem;
+    margin-top: -8px;
+}
+
+#main-page .actus .bloc-actus .une-actu p {
+    color: var(--darkblue);
+    font-size: 1.2rem;
+    padding: 20px;
+    text-align: justify;
+}
+
+
+#main-page .actus .titre-actus::before,
+#main-page .actus .titre-actus::after {
+    content: "";
+    display: inline-block;
+    width: 20%;
+    height: 2px;
+    background-color: var(--vertpastel);
+    margin: 0 20px 5px;
+}
+
+#main-page .actus .lire-plus {
+    width: 120px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    border-top: 1px solid var(--darkblue);
+    padding: 5px 0;
+}
+
+#main-page .actus .voir-plus {
+    text-transform: uppercase;
+    font-size: 1rem;
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: var(--darkblue);
+    background-color: white;
+    border-radius: 3px;
+    padding: 4px;
+    border: 2px solid var(--darkblue);
+}
+
+
+/* ------- Nav ---------- */
+
+
+#main-page nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+#main-page nav ul li {
+    width: 100%;
+
+}
+
+
+#main-page nav ul li a{
+    color: white;
+    font-size: 1.5rem;
+    list-style-type: none;
+    width: 95%;
+    text-transform: uppercase;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 10px auto;
+    background-color: var(--darkblue);
+    border-radius: 3px;
+}
+
+
+/* ---------------- FOOTER ------------------ */
+
+#foot {
+    background-color: var(--darkblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#foot #logo-footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#foot #logo-footer .logo {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#foot #logo-footer .logo img {
+    width: 40%;
+    min-width: 150px;
+}
+
+#foot #lesliens {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#foot #lesliens li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    margin: 20px 0;
+}
+
+#foot #lesliens li i {
+    padding-right: 20px;
+}
+
+#foot #lesliens a {
+    color: white;
+}
+
+#foot #lesliens li #logofb {
+    margin-right: 10px;
+}
+
+/* ------------- Retour haut de page ---------------- */
+
+#foot #back-up a {
+    color: var(--vertpastel);
+    font-size: 3rem;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+
+/* ---------Mentions ---------- */
+
+#foot #mentions {
+    padding: 30px 0 10px;
+
+}
+
+#foot #mentions a {
+    color: white;
+    font-size: 0.8rem;
+}
+
+#foot #mentions span {
+    color: var(--vertpastel);
+    padding: 0 15px;
+}
+
+
+/* -------------------------CONTACT------------------- */
+
+#contact {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact #titre-main {
+    background-color: var(--darkblue);
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+#contact #titre-main h1,
+h2 {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.photo-top {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.photo-top img {
+    width: 100%;
+}
+
+#contact p,
+address,
+a {
+    color: var(--darkblue);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#contact i {
+    width: 100%;
+    color: var(--bleuclair);
+    margin-right: 10px;
+    text-align: center;
+}
+
+#contact p,
+address {
+    padding: 10px;
+}
+
+#contact form h2 {
+    margin: 20px 0;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    color: var(--bleuclair);
+}
+
+#contact form p {
+    text-align: start;
+    padding-left: 20px;
+}
+
+#contact label {
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 150px;
+    vertical-align: top;
+
+}
+
+#contact .asterisque {
+    color: var(--vertpastel);
+    font-weight: bold;
+}
+
+
+
+#contact #obligation {
+    font-size: 1rem;
+    padding-left: 0;
+    margin: 10px 0;
+}
+
+#contact #envoi {
+    padding-left: 20px;
+}
+
+
+#contact input[type="checkbox"] {
+    margin-left: 20px;
+}
+
+#contact textarea {
+    width: 85%;
+}
+
+#contact .bloc-rgpd {
+    line-height: 0.8rem;
+}
+
+#contact label.petit {
+    width: 80%;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+}
+
+
+#contact #confidentiel {
+    border: 2px solid var(--vertpastel);
+    width: 85%;
+    height: 70px;
+    margin: 0 auto;
+    overflow-y: scroll;
+    padding: 5px;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+#contact input {
+    padding: 5px;
+}
+
+#contact input[type="submit"],
+#contact input[type="reset"] {
+    color: white;
+    background-color: var(--bleuclair);
+    border: none;
+    /* margin: 10px 0; */
+    padding: 10 15px;
+    border-radius: 3px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+#contact .geomap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 20px;
+    width: 100%;
+    height: 500px;
+}
+
+#contact .geomap h2 {
+    margin: 20px 0;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    color: var(--bleuclair);
+}
+
+#contact .geomap iframe {
+    width: 98%;
+    height: 600px;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* ----------------VIE LOCALE--------------- */
+#vie-locale {
+    width: 95%;
+}
+
+#vie-locale #titre-v-l {
+    background-color: var(--darkblue);
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+#vie-locale #titre-v-l h1 {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#vie-locale #presentation-vl {
+    color: var(--darkblue);
+    margin: 15px 0;
+    text-align: justify;
+}
+
+/* actualités */
+.actus #titre-main {
+    background-color: var(--darkblue);
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.actus #titre-main h1 {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.actus .bloc-actus .une-actu h2 {
+    background-color: var(--darkblue);
+    text-transform: uppercase;
+    color: white;
+    padding: 4px 0;
+    font-size: 1.2rem;
+    margin-top: -8px;
+}
+
+
+
+
+/* ------------cards------------ */
+
+#vie-locale .boite-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#vie-locale .boite-card .cards {
+    width: 48%;
+    position: relative;
+    margin: 5px 0;
+
+}
+
+#vie-locale .boite-card .cards img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+
+#vie-locale .boite-card .cards .text-card {
+    font-size: 1rem;
+    max-width: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(128, 128, 128, 0.747);
+    padding: 3px;
+    border-radius: 3px;
+}
+
+#vie-locale .boite-card .cards .text-card h2 {
+    padding: 0 10px;
+}
+
+
+#vie-locale .boite-card .cards .text-card .symbol {
+    color: white;
+    font-size: 2rem;
+}
+
+/* ---------les liens de vie locale */
+
+.vl-unit {
+    width: 95%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.vl-unit h1 {
+    color: var(--bleuclair);
+    margin: 20px auto;
+    font-weight: 800;
+    width: 180px;
+    text-align: center;
+}
+
+.vl-unit h1::before,
+.vl-unit h1::after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background-color: var(--vertpastel);
+    margin: 0 20px 5px;
+}
+
+.vl-unit img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.vl-unit p {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: var(--darkblue);
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    border-top: 1px solid var(--bleuclair);
+}
+
+.vl-unit .retour-vl {
+    width: 200px;
+    margin: 10px auto;
+    color: var(--darkblue);
+    border: 1px solid var(--darkblue);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.vl-unit .retour-vl a {
+    font-size: 1.2rem;
+}
+
+
+/* ----------- MEDIA QUERIES ------------------ */
+
+
+
+
+/* -----------menu burger animee-----------  */
+
+
+
+@media all and (max-width: 767px) {
+    #menu-burger {
+        background-color: white;
+        width: 30%;
+        height: 60px;
+    }
+
+    #menu-burger .main_pages {
+        display: none;
+        flex-direction: column;
+        color: var(--darkblue);
+        z-index: 1000;
+        width: 96%;
+    }
+
+    #menu-burger .main_pages a {
+        width: 100%;
+        z-index: 1000;
+        color: var(--darkblue);
+    }
+
+    #menu-burger .main_pages a:hover {
+        background-color: var(--vertpastel);
+    }
+
+    label {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: var(--darkblue);
+        cursor: pointer;
+    }
+
+    #toggle:checked+.main_pages {
+        display: flex;
+        background-color: white;
+        position: absolute;
+        top: 240px;
+        left: 0;
+        width: 100%;
+    }
+}
+
+/* ------------les cards prennent toutes la largeur sur tout petit écran--------- */
+
+@media all and (max-width: 380px) {
+
+    #vie-locale .boite-card .cards {
+        width: 100%;
+        margin: 5px auto;
+    }
+}
+
+/* --------------min 768px -------*/
+@media all and (min-width:768px) {
+
+    .fond {
+        display: none;
+    }        
+
+    #top-page #bandeau {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    /* diminue la taille de la loupe */
+    #top-page #bandeau .icones-bandeau {
+        width: 20%;
+    }
+
+    #top-page #bandeau #menu-burger {
+        width: 100%;
+        margin: 0 auto;
+        background: none;
+
+    }
+
+    #top-page #bandeau #menu-burger .main_pages {
+        width: 100%;
+        background: linear-gradient(130deg, rgba(60, 112, 255, 1) 0%, rgba(60, 210, 255, 1) 77%, rgba(60, 255, 203, 1) 100%);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #main-page nav ul {
+        display: none
+    }
+
+    #main-page nav ul a {
+        background: none;
+    }
+
+    #main-page #faro img {
+        display: none;
+    }
+
+    #vie-locale #titre-v-l {
+       margin: 0 0 30px;
+    }
+
+    #contact #titre-main {
+        margin: 0 0 30px;
+    }
+
+    #vie-locale .boite-card .cards a {
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+    }
+
+    #vie-locale .boite-card .cards a:hover {
+        opacity: 1.0;
+        filter: alpha(opacity=100);
+    }
+
+    #vie-locale .boite-card {
+        width: 100%;
+        justify-content:space-around;
+    }
+
+    #vie-locale .boite-card .cards {
+        width: 30%;
+        margin-top: 30px;
+    }
+
+    #main-page .actus .bloc-actus {
+        justify-content: space-around;
+    }
+
+
+    /* ---- pour mettre les actus cote à cote---- */
+    #main-page .actus .bloc-actus .une-actu {
+        width: 48%;
+        justify-content: space-between;
+    }
+
+    #main-page .actus .voir-plus {
+        margin: 40px 0;
+    }
+
+    /* -----pour étaler les infos du footer */
+    #foot #lesliens {
+        /* border: 2px solid yellow; */
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex start;
+        align-items: flex-start;
+        margin-top: 50px;
+        padding-left: 80px;
+    }
+
+    #foot #lesliens li {
+        /* border: 2px solid red; */
+        width: 35%;
+        display: flex;
+        justify-content: start;
+        font-size: 1.5rem;
+        color: white;
+        margin: 20px 0;
+        margin-left: 10%;
+    }
+
+    #foot #lesliens li i {
+        padding-right: 20px;
+    }
+
+    #contact form .message-rgpd .petit {
+        color: var(--darkblue);
+    }
+
+    
+
+
+}
+
+@media all and (min-width:992px) {
+    /* ---pour les liens vie locale----- */
+    .vl-unit img {
+        float: left;
+        width: 50%;
+        margin-bottom: 30px;
+        margin-right: 60px;
+    }
+
+    .vl-unit p {
+        border: none;
+    }
+
+    /* limiter la taille de la photo principale */
+    .photo-top {
+        margin: 15px auto;       
+    }
+
+    .photo-top img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    /* page contact */
+    #contact {
+        flex-direction: row;
+
+    }
+
+    
+
+    #contact .photo-top {
+        
+        width: 55%;
+        margin-top: 20px;
+    }
+
+    #contact #petites-infos {
+      
+        width: 35%;
+    }
+
+    #contact form {
+       /* border: 2px solid black; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+
+    #contact form h2 {
+       width: 80%;
+    }
+
+    #contact form .coordonnees {
+       /* border: 2px solid red; */
+        width: 45%;
+      
+    }
+
+    #contact form .message-rgpd {
+       /* border: 2px solid green; */
+        width: 45%;
+    }
+
+    #contact #confidentiel {
+        height: 120px;
+        font-size: 1.1rem;
+        margin: 20px auto;
+    }
+}
+
+
+
+/* ---arranger le deux traits qui entourent 'actualités'----- */
+@media all and (max-width:469px) {
+
+    #main-page .actus .titre-actus::before,
+    #main-page .actus .titre-actus::after {
+        content: "";
+        display: inline-block;
+        width: 10%;
+        height: 2px;
+        background-color: var(--vertpastel);
+    }
+}
+
+@media all and (max-width:352px) {
+
+    #main-page .actus .titre-actus::before,
+    #main-page .actus .titre-actus::after {
+        display: none;
+    }
+}
+
+
+/* Ecran de plus de 1200px */
+@media all and (min-width:1200px) {
+
+    #top-page #bandeau {
+        height: 400px;
+    }
+
+    /* bouton de recherche en position fixe */
+    #top-page #bandeau .icones-bandeau {
+        background-color: var(--vertpastel);
+        color: white;
+        width: 100px;
+        position: fixed;
+        top: 200px;
+        left: 0;
+        padding: 11px 7px 7px;
+        border-radius: 0 10px 10px 0;
+        z-index: 10000;
+    }
+
+    #top-page #bandeau .logo img {
+        max-width: 500px;
+    }
+
+}
