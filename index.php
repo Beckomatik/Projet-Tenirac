@@ -70,6 +70,9 @@
         </nav>
 
     </main>
+
+
+  
     <!-- --------------FOOTER---------------- -->
 
 <?php include('footer.php'); ?>
