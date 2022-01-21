@@ -13,5 +13,4 @@
 </main>
 
 
-<script type="text/javascript" src="tenirac.js"></script>
 <?php include('footer.php'); ?>

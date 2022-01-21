@@ -108,9 +108,10 @@ body {
     color: white;
 }
 
-#menu-burger .main_pages a:hover {
+#menu-burger .main_pages a:hover, .active{
     background: var(--vertpastel);
 }
+
 
 label {
     display: none;
@@ -120,6 +121,8 @@ label,
 #toggle {
     display: none;
 }
+
+
 
 
 /* ----------------- MAIN PAGE ------------------ */

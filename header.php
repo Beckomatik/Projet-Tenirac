@@ -17,20 +17,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
-
-<style>
-
-    body.sunny {
-        background-image: linear-gradient(to right top, #ff4e50, #ff713e, #ff932b, #ffb41d, #f9d423);
-    }
-    body.cloudy {
-        background-image: linear-gradient(to right top, #63747c, #71858e, #7f96a0, #8da8b2, #9bbac5);
-    }
-    body.rainy {
-        background-image: linear-gradient(to right top, #637c7b, #718e8c, #7ea09e, #8db2b0, #9bc5c3);
-    }
-</style>
-
     <!-- Feuille de style -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -53,13 +39,13 @@
             <nav id="menu-burger">
                 <label for="toggle">☰</label>
                 <input type="checkbox" id="toggle">
-                <div class="main_pages">
-                    <a href="index.php">Accueil</a>
-                    <a href="actualites.php">Actualités</a>
-                    <a href="vielocale.php">Vie Locale</a>
-                    <a href="mairie.php">Mairie</a>
-                    <a href="decouvrir.php">Découvrir</a>
-                    <a href="contact.php">Contact</a>
+                <div class="main_pages" id="myDIV">
+                    <a href="index.php" class="btn">Accueil</a>
+                    <a href="actualites.php" class="btn">Actualités</a>
+                    <a href="vielocale.php" class="btn">Vie Locale</a>
+                    <a href="mairie.php" class="btn">Mairie</a>
+                    <a href="decouvrir.php" class="btn">Découvrir</a>
+                    <a href="contact.php" class="btn">Contact</a>
                 </div>
             </nav>
         </div>
