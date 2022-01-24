@@ -22,6 +22,8 @@
 </head>
 
 <body>
+   <?php require_once("Class/mesArticles.php"); ?>
+   
     <!-- --------- HEADER ------------- -->
     <div class="fond">
         <!-- top bar téléphone et email -->

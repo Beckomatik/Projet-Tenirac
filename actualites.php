@@ -8,7 +8,7 @@
                 <h1 id="titre-contact">Actualités</h1>
             </div>
             <div class="bloc-actus">
-                <article class="une-actu">
+                <!-- <article class="une-actu">
                     <a href="actualites.php">
                         <img src="images/covid.jpg" alt="ville de tenirac">
                         <h2>Santé</h2>
@@ -31,15 +31,19 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, modi recusandae. Sunt dolorem iste dolore nemo hic. Debitis, sed error?</p>
                         <div class="lire-plus">Lire la suite</div>
                     </a>                    
-                </article>
+                </article> -->
+                <?php foreach($allArticles as $allArticle) {?>
                 <article class="une-actu">
                     <a href="#">
-                        <img src="images/expo.jpg" alt="ville de tenirac">
-                        <h3>Exposition</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, modi recusandae. Sunt dolorem iste dolore nemo hic. Debitis, sed error?</p>
+                        <img src="<?= $allArticle->getPicture() ?>" alt="ville de tenirac">
+                        <h3><?= $allArticle->getTitle() ?></h3>
+                        <p><?= $allArticle->getAccroche() ?></p>
                         <div class="lire-plus">Lire la suite</div>
                     </a>                    
                 </article>
+                <?php }; ?>
+
+                <!-- Boucle sur les articles de la class Article-->
                 
                 <a href="actualites.php"><div class="voir-plus">
                     Plus d'actus

@@ -18,7 +18,7 @@
         <section class="actus container">              
             <h2 class="titre-actus">Actualités</h2>
             <div class="bloc-actus">
-                <article class="une-actu">
+                <!-- <article class="une-actu">
                     <a href="actualites.php">
                         <img src="images/covid.jpg" alt="ville de tenirac">
                         <h3>Santé</h3>
@@ -49,7 +49,17 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, modi recusandae. Sunt dolorem iste dolore nemo hic. Debitis, sed error?</p>
                         <div class="lire-plus">Lire la suite</div>
                     </a>                    
+                </article> -->
+                <?php foreach($allArticles as $allArticle) {?>
+                <article class="une-actu">
+                    <a href="#">
+                        <img src="<?= $allArticle->getPicture() ?>" alt="ville de tenirac">
+                        <h3><?= $allArticle->getTitle() ?></h3>
+                        <p><?= $allArticle->getAccroche() ?></p>
+                        <div class="lire-plus">Lire la suite</div>
+                    </a>                    
                 </article>
+                <?php }; ?>
                 
                 <a href="actualites.php"><div class="voir-plus">
                     Plus d'actus
