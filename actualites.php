@@ -24,6 +24,22 @@
                         <div class="lire-plus">Lire la suite</div>
                     </a>                    
                 </article>
+                <article class="une-actu">
+                    <a href="actualités.php">
+                        <img src="images/travaux.jpg" alt="ville de tenirac">
+                        <h3>Travaux</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, modi recusandae. Sunt dolorem iste dolore nemo hic. Debitis, sed error?</p>
+                        <div class="lire-plus">Lire la suite</div>
+                    </a>                    
+                </article>
+                <article class="une-actu">
+                    <a href="#">
+                        <img src="images/expo.jpg" alt="ville de tenirac">
+                        <h3>Exposition</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, modi recusandae. Sunt dolorem iste dolore nemo hic. Debitis, sed error?</p>
+                        <div class="lire-plus">Lire la suite</div>
+                    </a>                    
+                </article>
                 
                 <a href="actualites.php"><div class="voir-plus">
                     Plus d'actus

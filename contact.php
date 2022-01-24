@@ -37,6 +37,11 @@
                     <label for="email">E-mail <span class="asterisque">*</span></label>
                     <input type="email" name="email" placeholder="Tapez votre email" id="email">
                 </p>
+                <p>
+                    <label for="adresse">Adresse <span class="asterisque">*</span></label>
+                    <input type="adresse" name="adresse" placeholder="Tapez votre adresse" id="adresse">
+                    <ul id="wrapper"></ul>
+                </p>
 
 
                 <p>

@@ -505,6 +505,17 @@ address {
     text-transform: uppercase;
 }
 
+#contact li{
+    background-color: var(--bleuclair);
+  
+    text-align: center;
+    list-style-type: none;
+    cursor : pointer;
+    border : 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 #contact .geomap {
     display: flex;
     flex-direction: column;
