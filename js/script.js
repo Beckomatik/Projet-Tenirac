@@ -6,7 +6,7 @@ function weatherBalloon( cityID ) {
     .then(function(resp) { return resp.json() }) // Convert data to json
     .then(function(data) {
       drawWeather(data);
-      console.log(data);
+      
     })
     .catch(function() {
       // catch any errors
@@ -14,13 +14,12 @@ function weatherBalloon( cityID ) {
   }
   function drawWeather( d ) {
     var celcius = Math.round(parseFloat(d.main.temp)-273.15);
-    // var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
     var description = d.weather[0].description; 
     var vent = d.wind.speed*3.6;
         vent = vent.toFixed(2);
     
-    document.getElementById('description').innerHTML = description;
-    document.getElementById('temp').innerHTML = celcius + '&deg;' + "c";
+    document.getElementById('description').innerHTML = "Le ciel est " + description;
+    document.getElementById('temp').innerHTML = "Température : " + celcius + '&deg;' + "c";
     document.getElementById('wind').innerHTML = "Le vent souffle à " + vent + "km/h";
     // document.getElementById('location').innerHTML = "Tenirac";
 
@@ -31,4 +30,12 @@ function weatherBalloon( cityID ) {
 
     
 }
+
+// let links = document.getElementById("myDIV").getElementsByTagName("a");
+// console.log(links);
+//   for(let i = 0; i < links.length; i++){
+//     if(links[i].href == location.href)
+//     links[0].classList.remove('active');
+//     links[i].classList.add('active');
+//   }
 

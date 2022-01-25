@@ -22,7 +22,7 @@
         </div>
 
 
-        <form action="envoyerform.php" method="post">
+        <form action="" method="post" id="contact-form">
             <h2 id="ancre">Nous contacter :</h2>
             <div class="coordonnees">
                 <p>
@@ -30,7 +30,7 @@
                     <input type="text" name="nom" placeholder="Tapez votre nom" id="nom">
                 </p>
                 <p>
-                    <label for="prenom">Prénom <span class="asterisque">*</span></label>
+                    <label for="prenom">Prénom</label>
                     <input type="text" name="prenom" placeholder="Tapez votre prénom" id="prenom">
                 </p>
                 <p>
@@ -38,7 +38,7 @@
                     <input type="email" name="email" placeholder="Tapez votre email" id="email">
                 </p>
                 <p>
-                    <label for="adresse">Adresse <span class="asterisque">*</span></label>
+                    <label for="adresse">Adresse</label>
                     <input type="adresse" name="adresse" placeholder="Tapez votre adresse" id="adresse">
                     <ul id="wrapper"></ul>
                 </p>

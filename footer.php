@@ -30,8 +30,12 @@
         <div id="back-up"><a href="index.php"><i class="fas fa-chevron-up" title="Retour haut de page"></i></a></div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="js/formulaire.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/active.js"></script>
     <script type="text/javascript" src="js/geoapi.js"></script>
+    
+    
 </body>
 </html>

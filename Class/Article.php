@@ -13,23 +13,16 @@ class Article {
         $this->accroche = $accroche;
     }
 
-    public function setTitle($titre){
-        $this->title = $titre;
-    }
+   
     public function getTitle(){
         return $this->title;
     }
 
-    public function setPicture($picture){
-        $this->picture = $picture;
-    }
+   
     public function getPicture(){
         return $this->picture;
     }
 
-    public function setAccroche($accroche){
-        $this->accroche = $accroche;
-    }
     public function getAccroche(){
         return $this->accroche;
     }

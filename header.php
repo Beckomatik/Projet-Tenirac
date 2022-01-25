@@ -42,12 +42,12 @@
                 <label for="toggle">☰</label>
                 <input type="checkbox" id="toggle">
                 <div class="main_pages" id="myDIV">
-                    <a href="index.php" class="btn">Accueil</a>
-                    <a href="actualites.php" class="btn">Actualités</a>
-                    <a href="vielocale.php" class="btn">Vie Locale</a>
-                    <a href="mairie.php" class="btn">Mairie</a>
-                    <a href="decouvrir.php" class="btn">Découvrir</a>
-                    <a href="contact.php" class="btn">Contact</a>
+                    <a href="index.php" class="active">Accueil</a>
+                    <a href="actualites.php">Actualités</a>
+                    <a href="vielocale.php">Vie Locale</a>
+                    <a href="mairie.php">Mairie</a>
+                    <a href="decouvrir.php">Découvrir</a>
+                    <a href="contact.php">Contact</a>
                 </div>
             </nav>
         </div>

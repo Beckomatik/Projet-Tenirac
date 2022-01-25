@@ -35,7 +35,7 @@
                 <?php foreach($allArticles as $allArticle) {?>
                 <article class="une-actu">
                     <a href="#">
-                        <img src="<?= $allArticle->getPicture() ?>" alt="ville de tenirac">
+                        <img src=<?= $allArticle->getPicture()?>>
                         <h3><?= $allArticle->getTitle() ?></h3>
                         <p><?= $allArticle->getAccroche() ?></p>
                         <div class="lire-plus">Lire la suite</div>
