@@ -20,17 +20,12 @@
         //submission["id"] = 1;
 
        
-        const {error, data} = await supabase.from('entries').insert([submission])
+        const {error} = await supabase.from('entries').insert([submission], {returning: 'minimal'})
         console.log(submission);
         if (error){
             console.log(error);
             alert ('Il y a une erreur, essayez à nouveau')
         }else{
             alert ('Merci de nous avoir contacté')
-            console.log(this.href)
-            //window.location = this.href;
         }
-
-
-
     })
