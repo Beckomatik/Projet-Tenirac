@@ -27,7 +27,7 @@
             
         <!-- ---------Retour Haut de Page----------- -->
 
-        <div id="back-up"><a href="index.php"><i class="fas fa-chevron-up" title="Retour haut de page"></i></a></div>
+        <div id="back-up"><a href="#top-page"><i class="fas fa-chevron-up" title="Retour haut de page"></i></a></div>
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>

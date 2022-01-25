@@ -10,6 +10,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -58,6 +59,7 @@ body {
 
 #top-page {
     margin: 0 auto;
+    
 }
 
 #top-page #bandeau {
@@ -108,7 +110,7 @@ body {
     color: white;
 }
 
-#menu-burger .main_pages a:hover, .active{
+#menu-burger .main_pages a:hover{
     background: var(--vertpastel);
 }
 
@@ -121,9 +123,9 @@ label,
 #toggle {
     display: none;
 }
-
-.active{
+#menu-burger .main_pages a.active{
     background-color: var(--vertpastel);
+    text-decoration: underline;
 }
 
 

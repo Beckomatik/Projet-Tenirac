@@ -1,15 +1,15 @@
-// CLASS ACTIVE ------------------------------------------------
-// Get the container element
-var btnContainer = document.getElementById("myDIV");
-
-// Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("btn");
-
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
+// let links = document.getElementById("myDIV").getElementsByTagName("a");
+// console.log(links);
+//   for(let i = 0; i < links.length; i++){
+//     if(links[i].href == location.href)
+//     links[0].classList.remove('active');
+//     links[i].classList.add('active');
+//   }
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll('a');
+const menuLength = menuItem.length
+for (let i = 0; i < menuLength; i++){
+  if(menuItem[i].href === currentLocation){
+    menuItem[i].className = "active"
+  }
 }
