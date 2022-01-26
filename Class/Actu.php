@@ -1,33 +1,33 @@
 <?php
 
-class Article {
+class Actu {
 
+    // propriétés ou attributs
     private string $title;
     private string $picture;
     private string $accroche;
   
-
+    // fonction/méthode construct
     public function __construct(string $title, string $picture, string $accroche){
         $this->title = $title;
         $this->picture = $picture;
         $this->accroche = $accroche;
     }
 
-   
-    public function getTitle(){
+   // Méthodes
+    public function getTitle():string{
         return $this->title;
     }
 
    
-    public function getPicture(){
+    public function getPicture():string{
         return $this->picture;
     }
 
-    public function getAccroche(){
+    public function getAccroche():string{
         return $this->accroche;
     }
 
 }
-
 
 ?>

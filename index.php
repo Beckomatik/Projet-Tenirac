@@ -50,12 +50,12 @@
                         <div class="lire-plus">Lire la suite</div>
                     </a>                    
                 </article> -->
-                <?php foreach($allArticles as $allArticle) {?>
+                <?php foreach($allActus as $allActu) {?>
                 <article class="une-actu">
                     <a href="#">
-                        <img src="<?= $allArticle->getPicture() ?>" alt="ville de tenirac">
-                        <h3><?= $allArticle->getTitle() ?></h3>
-                        <p><?= $allArticle->getAccroche() ?></p>
+                        <img src="<?= $allActu->getPicture() ?>" alt="ville de tenirac">
+                        <h3><?= $allActu->getTitle() ?></h3>
+                        <p><?= $allActu->getAccroche() ?></p>
                         <div class="lire-plus">Lire la suite</div>
                     </a>                    
                 </article>

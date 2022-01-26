@@ -500,6 +500,8 @@ address {
     padding: 5px;
 }
 
+
+
 #contact input[type="submit"],
 #contact input[type="reset"] {
     color: white;
@@ -511,6 +513,7 @@ address {
     font-size: 1rem;
     text-transform: uppercase;
 }
+
 
 #contact li{
     background-color: var(--bleuclair);

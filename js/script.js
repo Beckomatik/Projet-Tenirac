@@ -16,9 +16,9 @@ function weatherBalloon( cityID ) {
     var celcius = Math.round(parseFloat(d.main.temp)-273.15);
     var description = d.weather[0].description; 
     var vent = d.wind.speed*3.6;
-        vent = vent.toFixed(2);
+        vent = vent.toFixed(1);
     
-    document.getElementById('description').innerHTML = "Le ciel est " + description;
+    document.getElementById('description').innerHTML = "Au dessus de nos têtes : " + description;
     document.getElementById('temp').innerHTML = "Température : " + celcius + '&deg;' + "c";
     document.getElementById('wind').innerHTML = "Le vent souffle à " + vent + "km/h";
     // document.getElementById('location').innerHTML = "Tenirac";

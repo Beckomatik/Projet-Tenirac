@@ -22,7 +22,7 @@
 </head>
 
 <body>
-   <?php require_once("Class/mesArticles.php"); ?>
+   <?php require_once("Class/mesActus.php"); ?>
    
     <!-- --------- HEADER ------------- -->
     <div class="fond">
